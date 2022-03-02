@@ -1,0 +1,82 @@
+nav {
+  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.nav-menu {
+  display: none;
+}
+
+nav a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  color: black;
+  margin: 0 12px;
+}
+
+#nav-search {
+  background: #F4F4F4;
+  border: 1px solid #F4F4F4;
+  border-radius: 24px;
+  padding: 8px 10px;
+  display: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.logo {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.link {
+  padding: 8px 10px;
+}
+
+.nav-btns {
+  -ms-grid-column: 6;
+      grid-column-start: 6;
+  grid-column-end: 11;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.nav-btns a {
+  margin: 0 5px;
+}
+
+.form {
+  -ms-grid-column: 11;
+      grid-column-start: 11;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+#sign-up {
+  display: none;
+}
+
+#sign-in {
+  background: #F4F4F4;
+  border-radius: 24px;
+}
+
+.hamburger {
+  -ms-grid-column: 12;
+      grid-column-start: 12;
+  grid-column-end: 13;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+/*# sourceMappingURL=nav.css.map */

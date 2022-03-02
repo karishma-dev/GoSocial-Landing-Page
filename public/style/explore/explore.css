@@ -1,0 +1,58 @@
+.explore-communities.grid-container {
+  margin: 120px 20px;
+}
+
+.explore-communities:last-child.grid-container {
+  margin: 0px 3%;
+}
+
+.explore-communities .section-link {
+  margin: 0;
+}
+
+.explore-head {
+  margin: 24px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.outer-slider {
+  width: 100%;
+  overflow: scroll;
+  height: 100%;
+  position: relative;
+  cursor: -webkit-grab;
+  cursor: grab;
+  margin: 24px 0;
+}
+
+.outer-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.inner-slider {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.live-events-bg {
+  background: #6A4EE3;
+  color: white;
+}
+/*# sourceMappingURL=explore.css.map */
