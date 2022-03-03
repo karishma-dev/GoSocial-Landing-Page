@@ -1,0 +1,491 @@
+/* ====== Media Queries ======= */
+@media (min-width: 400px) {
+    .nav-btns {
+        grid-column-start: 5;
+        padding: 0 10px;
+    }
+    #sign-up {
+        display: inline;
+    }
+}
+@media (min-width: 708px) {
+    /* ==== Grid Container ====== */
+    .grid-container {
+        grid-template-columns: repeat(6, 1fr);
+        max-width: 600px;
+    }
+    .col-1,.col-2, .col-3,.col-4, .col-5, .col-6, .col-7,.col-8,.col-9,
+    .col-10, .col-11, .col-12, .grid-col{
+        grid-column: span 6;
+    }
+
+    /* ====== Navigation Bar ====== */
+    nav.grid-container {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        max-width: 100%;
+    }
+    .logo {
+        order: 0;
+    }
+    .nav-menu {
+        display: flex;
+        order: 1;
+        width: 53%;
+    }
+    .nav-item a {
+        margin: 0 5px;
+    }
+    #sign-up {
+        display: none;
+    }
+    .form {
+        order: 2;
+    }
+    .nav-btns {
+        order: 3;
+    }
+    .nav-btns a {
+        margin: 0;
+    }
+    .hamburger {
+        display: none;
+    }
+    #sign-up {
+        display: inline;
+    }
+
+    /* ===== Common Style ===== */
+    .main-headings {
+        width: 100%;
+        max-width: 100%;
+    }
+    .main-desc {
+        font-size: 24px;
+        width: 100%;
+        max-width: 100%;
+        margin: 24px 0px;
+    }
+
+    /* ===== Explore ====== */
+    .explore-communities.grid-container {
+        margin: 120px auto;
+    }
+    .explore-communities:last-child.grid-container {
+        margin: 0px 0px;
+    }
+
+    /* ==== Footer ===== */
+    .footer-creator {
+        display: flex;
+        gap: 15vw;
+    }
+    .footer-links {
+        grid-template-areas: "social creator terms socialmedia";
+    }
+    .footer-links .cta {
+        flex-direction: column;
+        gap: 0;
+    }
+    .footer-links .cta a {
+        margin: 0;
+    }
+    .footer-link-col {
+        padding: 24px 24px 40px;
+    }
+    .footer-link-col:last-child {
+        background: transparent;
+        flex-direction: column;
+        gap: inherit;
+    }
+    .footer-link-col:last-child a {
+        color: gray;
+    }
+}
+@media (min-width: 870px) {
+    /* ==== Grid Container ====== */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 20px;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    .col-1 {
+        grid-column: span 1;
+    }
+    .col-2 {
+        grid-column: span 2;
+    }
+    .col-3 {
+        grid-column: span 3;
+    }
+    .col-4 {
+        grid-column: span 4;
+    }
+    .col-5 {
+        grid-column: span 5;
+    }
+    .col-6 {
+        grid-column: span 6;
+    }
+    .col-7 {
+        grid-column: span 7;
+    }
+    .col-8 {
+        grid-column: span 8;
+    }
+    .col-9 {
+        grid-column: span 9;
+    }
+    .col-10 {
+        grid-column: span 10;
+    }
+    .col-11 {
+        grid-column: span 11;
+    }
+    .col-12 {
+        grid-column: span 12;
+    }
+    .grid-col {
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+
+    /* ==== Navigation Bar ====== */
+    nav.grid-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        max-width: 1260px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .nav-menu {
+        width: fit-content;
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .form {
+        grid-column-start: 9;
+        grid-column-end: 9;
+    }
+    .nav-btns {
+        grid-column-start: 10;
+        grid-column-end: 13;
+    }
+    .wrapper {
+        margin: 0 auto;
+        top: 0;
+    }
+
+    /* ===== Common Style ===== */
+    .main-headings {
+        max-width: 86%;
+    }
+    .main-desc {
+        max-width: 80%;
+    }
+
+    /* ====== Explore ======= */
+    .explore-communities.grid-container {
+        padding: 0 20px;
+    }
+    .explore-communities:last-child.grid-container {
+        margin: 0px 0 0 -20px;
+    }
+    .explore-challenges .outer-slider {
+        margin: 0;
+    }
+    .explore-challenges .inner-slider {
+        position: static;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        column-gap: 5px;
+    }
+
+    /* ===== Challenge ===== */
+    .challenge-card {
+        max-width: 320px;
+    }
+    .challenge-card-img {
+        max-width: 320px;
+    }
+    .challenge-card-heading {
+        font-size: 20px;
+    }
+    .challenge-flex span {
+        font-size: 11px;
+    }
+    #challenge2 {
+        left: 9vw;
+    }
+    .challenge-card-footer {
+        gap: 5px;
+    }
+    .challenge-card-creator {
+        margin-left: 10px;
+    }
+
+    /* ===== Join ===== */
+    .join-bg {
+        min-height: 90vh;
+    }
+    .join-bg .section-text {
+        margin: 100px 0;
+    }
+    .join-bg .wrapper {
+        width: 400px;
+        height: 400px;
+    }
+    .join-bg .card {
+        top: -60px;
+        left: -35px;
+    }
+    .join-bg .cta {
+        flex-direction: column;
+    }
+    .join-bg .cta a {
+        margin: 0;
+    }
+    #mobile {
+        width: 470px;
+        height: 680px;
+    }
+
+    /* ==== Footer ==== */
+    .footer-links .cta {
+        margin: 20px 0;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+}
+@media (min-width: 850px) {
+    .challenge-card {
+        max-width: 340px;
+    }
+    .challenge-card-img {
+        max-width: 340px;
+    }
+}
+@media (min-width: 1000px) {
+    /* ==== Navigation Bar ====== */
+    .nav-menu {
+        grid-column-end: 9;
+    }
+    .form {
+        grid-column-start: 9;
+        grid-column-end: 9;
+    }
+    .nav-btns {
+        grid-column-start: 10;
+        grid-column-end: 13;
+    }
+    #sign-up {
+        margin-right: 20px;
+    }
+    #nav-search {
+        display: inline;
+    }
+    #search-icon {
+        display: none;
+    }
+
+    /* ==== Challenge ==== */
+    .challenge-card, .challenge-card-img {
+        max-width: 380px;
+    }
+
+    /* ==== Join ==== */
+    .join-bg .cta {
+        flex-direction: row;
+    }
+    #mobile {
+        height: 655px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid-col {
+        grid-column: span 12;
+    }
+
+    /* ==== Navigation Bar ====== */
+    .nav-menu {
+        grid-column-end: 5;
+    }
+    .form {
+        grid-column-start: 7;
+        grid-column-end: 8;
+    }
+    .nav-btns {
+        grid-column-start: 10;
+        grid-column-end: 13;
+    }
+
+    /* ==== Common Style ===== */
+    .section-container {
+        padding: 120px 20px;
+    }
+    .main-headings {
+        font-size: 4rem;
+        line-height: 4.3rem;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* === Header === */
+    header .section-container {
+        padding: 120px 20px 0;
+    }
+    /* Card */
+    .wrapper {
+        width: 470px;
+        height: 430px;
+    }
+    .card {
+        padding: 0px 0px 32px;
+    }
+    .welcome-card-img {
+        width: 390px;
+    }
+    .card-text {
+        padding: 10px 40px;
+        max-width: 370px;
+    }
+    .title-text {
+        font-size: 1em;
+        margin: 0 0 10px;
+    }
+    .title-creator {
+        margin: 10px 0 15px;
+    }
+    .card-desc {
+        font-size: 12px;
+    }
+    .members {
+        padding: 0 25px;
+    }
+    .members span {
+        margin-left: 110px;
+    }
+    .yellow-star {
+        right: 0;
+        bottom: 15%;
+    }
+
+    /* Dive Into */
+    .dive-pointer {
+        margin: 48px 32px 0;
+    }
+    .dive-pointer:first-child {
+        margin: 48px 32px 0 0;
+    }
+    .pointer-heading, .pointer-desc {
+        max-width: 300px;
+    }
+
+    /* ==== Events ==== */
+    .live-events-bg, .challenges-bg {
+        padding: 0 20px;
+    }
+    .live-events-bg .wrapper {
+        width: 480px;
+        height: 450px;
+    }
+    .events-card {
+        background-color: white;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 8px;
+        margin: 0 auto 35px;
+    }
+    .event-card-img {
+        width: inherit;
+        max-width: 400px;
+    }
+    .event-card-text {
+        padding: 16px;
+        min-width: 390px;
+    }
+
+    /* ==== Challenges ===== */
+    .challenges-bg .main-headings {
+        width: 100%;
+        max-width: 80%;
+    }
+    .challenges-bg .yellow-star {
+        left: -5%;
+    }
+    .challenges-bg .main-desc {
+        width: 100%;
+        max-width: 70%;
+    }
+    .challenges-bg .wrapper {
+        width: 410px;
+        height: 400px;
+        margin: 0;
+    }
+    .challenge-card {
+        max-width: 340px;
+    }
+    .challenge-card-img {
+        max-width: 340px;
+    }
+
+    /* ==== Explore ===== */
+    .explore-challenges .inner-slider {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+    }
+    .explore-communities:last-child.grid-container {
+        margin: 0px 0 0 -10px;
+    }
+
+    /* ==== Creator ===== */
+    .creators-bg .outer-slider {
+        overflow: hidden;
+    }
+
+    /* === Monetize */
+    .monetize-bg .section-text {
+        width: 80%;
+        margin: 0;
+    }
+
+    /* ==== JOIN ==== */
+    .join-bg {
+        min-height: 100vh;
+    }
+    .join-bg .section-text {
+        margin: 100px 0;
+    }
+    .join-bg .card {
+        top: -50px;
+    }
+    .margin-container .section-text{
+        grid-column-start: 1;
+        grid-column-end: 9;
+    }
+    .margin-container .main-headings{
+        width: 85%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .challenge-card {
+        max-width: 380px;
+    }
+    .challenge-card-img {
+        max-width: 380px;
+    }
+    .challenge-card-creator {
+        margin-left: 50px;
+    }
+}
+
+

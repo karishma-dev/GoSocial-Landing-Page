@@ -1,0 +1,55 @@
+/* ==== Blog ===== */
+.margin-container {
+    margin: 120px 0;
+}
+.blog-card {
+    border: 1px solid #A8A8A8;
+    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.08));
+    border-radius: 16px;
+    width: fit-content;
+}
+.blog-card img {
+    border-radius: 16px 16px 0 0;
+    max-width: 375px;
+}
+.blog-text {
+    padding: 32px;
+    background: #FFFFFF;
+    backdrop-filter: blur(40px);
+    width: 100%;
+    max-width: 375px;
+    border-radius: 0 0 16px 16px;
+}
+.blog-info {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #A8A8A8;
+    margin: 0 16px 0 0;
+    text-transform: uppercase;
+}
+.blog-heading {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin: 16px 0px;
+}
+.author {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #A8A8A8;
+    margin: 0 4px 0 0;
+}
+.author-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #6A4EE3;
+    margin: 0 4px;
+}
