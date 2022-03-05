@@ -6,7 +6,6 @@
 
 - [Overview](#overview)
   - [About](#about)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -21,11 +20,7 @@
 
 This project is really special to me as it was given to me by my brother [Charchit garg](https://www.linkedin.com/in/charchitgarg27/), who was a UI/UX designer at GoSocial. 
 
-( I wish I could have shown you this 	&#57378; ). 
-
-### Screenshot
-
-![](./screenshot.jpg)
+( I wish I could have shown you this &#10084; ). 
 
 ### Links
 
