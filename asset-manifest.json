@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/GoSocial-Landing-Page/static/css/main.e43992bd.css",
+    "main.js": "/GoSocial-Landing-Page/static/js/main.7c3c5b5d.js",
+    "static/js/787.48be34d3.chunk.js": "/GoSocial-Landing-Page/static/js/787.48be34d3.chunk.js",
+    "index.html": "/GoSocial-Landing-Page/index.html",
+    "main.e43992bd.css.map": "/GoSocial-Landing-Page/static/css/main.e43992bd.css.map",
+    "main.7c3c5b5d.js.map": "/GoSocial-Landing-Page/static/js/main.7c3c5b5d.js.map",
+    "787.48be34d3.chunk.js.map": "/GoSocial-Landing-Page/static/js/787.48be34d3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e43992bd.css",
+    "static/js/main.7c3c5b5d.js"
+  ]
+}
