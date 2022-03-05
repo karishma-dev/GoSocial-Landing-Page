@@ -1,4 +1,6 @@
+//HeaderCard Component
 export default function HeaderCard({img}){
+    
     return (
         <div className="card">
             <img src={img} alt="" className="welcome-card-img" />

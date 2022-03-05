@@ -1,3 +1,4 @@
+// Import Statements
 import Nav from "./Components/Nav.js";
 import Header from "./Components/Header";
 import Explore from './Components/explore';
@@ -10,11 +11,20 @@ import Blog from './Components/Blog';
 import Join from './Components/Join';
 import "./style/combined.css";
 
-function App() {
+// App Component
+export default function App() {
+
   return (
+
     <div className="App">
+
+      {/* Navigation bar */}
       <Nav />
+
+      {/* Header */}
       <Header />
+
+      {/* Main */}
       <main>
         <Explore heading="Communities" linkText="Explore Communities" />
         <Events />
@@ -26,9 +36,12 @@ function App() {
         <Blog />
         <Join />
       </main>
+
+      {/* Footer */}
       <Footer />
+      
     </div>
   );
+
 }
 
-export default App;

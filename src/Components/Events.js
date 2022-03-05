@@ -1,13 +1,21 @@
+// Import Statements
 import SectionText from "./SectionText";
 import SwiperCard from "./Cards/SwiperCard";
 
+// Events Component
 export default function Events(){
+
     return (
-        // <!-- Live Events Background -->
+        
+        // Live Events Background
         <div className="live-events-bg">
+
             <div className="grid-container">
-                {/* <!-- Welcome Container --> */}
+
+                {/* Welcome Container */}
                 <div className="section-container col-12 grid-col grid-container">
+
+                    {/* SectionText Component */}
                     <SectionText 
                         welcome="Workshops, meet-ups, and more"
                         heading="Live & Interactive Events"
@@ -15,10 +23,13 @@ export default function Events(){
                         linkText="See All Events" 
                         location="main"/>
 
-                    {/* Welcome Card */}
+                    {/* SwiperCard Component*/}
                     <SwiperCard location="Events" />
+
                 </div>
+
             </div>
+
         </div>
         
     )

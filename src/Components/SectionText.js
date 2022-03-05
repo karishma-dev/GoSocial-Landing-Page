@@ -25,7 +25,7 @@ export default function SectionText({welcome, heading, desc, linkText, location}
 function Cta({location}){
     let secondCta;
     if(location === "header"){
-        secondCta = <span>Join GoSocial &#8594;</span>;
+        secondCta = <a id="join-link">Join GoSocial &#8594;</a>;
     }else if(location ==="Creator"){
         return "";
     }else{

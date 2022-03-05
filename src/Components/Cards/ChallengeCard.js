@@ -1,3 +1,4 @@
+// ChallengeCard Component
 export default function ChallengeCard({img, id}){
     return (
         <div className="challenge-card" id={id}>

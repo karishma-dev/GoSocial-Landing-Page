@@ -1,14 +1,21 @@
+// DiveInto Component
 export default function DiveInto({obj}){
+
     return(
+
         // DiveInto
        <div className="dive-into col-12 grid-container grid-col">  
-        <DiveCol  obj={obj[0]}/>
-        <DiveCol obj={obj[1]} />
-        <DiveCol obj={obj[2]} />
-      </div>
+            <DiveCol  obj={obj[0]}/>
+            <DiveCol obj={obj[1]} />
+            <DiveCol obj={obj[2]} />
+       </div>
     );
+
 }
+
+// DiveCol Component
 function DiveCol({obj}){
+
     return(
         <div className="dive-pointer col-4">
             <img src= {obj.img} alt="" />
@@ -20,4 +27,5 @@ function DiveCol({obj}){
             </p>
         </div>
     );
+    
 }

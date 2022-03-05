@@ -28,7 +28,7 @@ a {
     align-items: center;
     height: fit-content;
     padding: 10px;
-    min-width: 400px;
+    min-width: 320px;
 }
 .col-1,.col-2,.col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .grid-col {
     grid-column: span 12;
@@ -57,7 +57,7 @@ a {
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 2.5rem;
-    max-width: 500px;
+    max-width: 390px;
 }
 
 /* Main Description */
@@ -80,7 +80,11 @@ a {
     color: white;
     width: fit-content;
     display: block;
-    margin: 0px 0;
+    margin: 0;
+}
+.section-link:hover{
+    background: #5848a1;
+    color: white;
 }
 .live-events-bg, .challenges-bg, .creators-bg, .join-bg, .monetize-bg, .explore-communities {
     min-width: 428px;
@@ -95,17 +99,42 @@ nav {
     width: fit-content;
 }
 nav.grid-container{
-    min-width: 420px;
+    min-width: 428px;
+    padding: 15px 30px;
 }
 .nav-menu {
-    display: none;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 53px;
+    width: 100%;
+    left: -10000px;
+    padding: 30px 0 30px 1vw;
+    max-width: 700px;
+    min-width: 428px;
 }
-nav a {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 24px;
-    color: black;
-    margin: 0 12px;
+.nav-menu.active{
+    left: 0;
+}
+a{
+    color: #000000;
+}
+a:hover{
+    color: #6A4EE3;
+}
+.nav-menu a{
+    color: #000000;
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+    position: relative;
+    left: 0;
+    transform: translate(-50%);
+    width: 100%;
+}
+.nav-item a:hover{
+    color: #6A4EE3;
 }
 #nav-search {
     background: #F4F4F4;
@@ -118,34 +147,33 @@ nav a {
 .logo {
     order: 0;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
 }
 .link {
     padding: 8px 10px;
+    font-size: 0.8rem;
+    border-radius: 24px;
 }
 .nav-btns {
     grid-column-start: 6;
     grid-column-end: 11;
     order: 1;
 }
-.nav-btns a {
-    margin: 0 5px;
-}
 .form {
     grid-column-start: 11;
     order: 2;
 }
-#sign-up {
-    display: none;
+#sign-up{
+    border: 1px solid #F4F4F4;
 }
 #sign-in {
     background: #F4F4F4;
-    border-radius: 24px;
 }
 .hamburger {
     grid-column-start: 12;
     grid-column-end: 13;
     order: 3;
+    cursor: pointer;
 }
 
 /* ===== Header =====  */
@@ -160,7 +188,7 @@ header {
     display: block;
 }
 
-.cta span {
+#join-link{
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -171,8 +199,8 @@ header {
     background: -webkit-gradient(linear, left top, left bottom, from(#6A4EE3), to(#1C0095));
     background: linear-gradient(180deg, #6A4EE3 0%, #1C0095 100%);
     border-radius: 100%;
-    width: 280px;
-    height: 310px;
+    width: 340px;
+    height: 330px;
     margin: 50px auto;
     position: relative;
     z-index: 0;
@@ -210,16 +238,16 @@ header .card{
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.19), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.11326), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0767396);
 }
 .welcome-card-img {
-    width: 250px;
+    width: 270px;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
 }
 .card-text {
     width: fit-content;
-    max-width: 200px;
+    max-width: 250px;
     height: fit-content;
-    margin: 10px 10px 0;
-    padding: 0 3px;
+    margin: 17px 10px 0;
+    padding: 0 23px;
     font-style: normal;
 }
 .title {
@@ -227,7 +255,7 @@ header .card{
 }
 .title-text {
     font-weight: 600;
-    font-size: 0.75em;
+    font-size: 0.8em;
     line-height: 150%;
     letter-spacing: -0.02em;
 }
@@ -262,7 +290,7 @@ header .card{
 }
 .card-desc {
     font-weight: 500;
-    font-size: 0.5em;
+    font-size: 0.6em;
     line-height: 20px;
     width: 100%;
     height: fit-content;
@@ -279,11 +307,11 @@ header .card{
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
-    margin-left: 110px;
+    margin-left: 122px;
 }
 .members-img {
     position: relative;
-    left: 14px;
+    left: 30px;
     bottom: 5.4px;
 }
 .members-img img {
@@ -310,6 +338,9 @@ header .swiper-pagination-bullet{
 
 
 /* === Dive Into Section ===== */
+.dive-into.grid-container{
+    margin: 0 20px;
+}
 .dive-into img {
     margin: 32px 0 0;
 }
@@ -330,7 +361,7 @@ header .swiper-pagination-bullet{
     margin: 16px 20px 0 0;
 }
 
-/* === Explore Section */
+/* ======== Explore Section ======== */
 .explore-communities.grid-container {
     margin: 120px 20px;
     min-width: 370px;
@@ -338,15 +369,26 @@ header .swiper-pagination-bullet{
     place-content: center;
 }
 .explore-communities:last-child.grid-container {
-    margin: 0px 20px;
+    margin: 0 20px;
 }
 .explore-communities .section-link {
     margin: 0;
 }
+.explore-communities .card, .explore-communities .events-card{
+    margin: 0;
+}
+.creators-bg .section-link{
+    margin: 0;
+}
 .explore-head {
-    margin: 24px 0px;
+    margin: 24px auto;
+    width: 100%;
+    max-width: 200px;
     display: flex;
     justify-content: space-between;
+}
+.explore-head h2{
+    font-size: 1rem;
 }
 .arrow {
     display: inline;
@@ -354,28 +396,40 @@ header .swiper-pagination-bullet{
 }
 .outer-slider {
     width: 100%;
-    overflow: scroll;
     height: 100%;
     position: relative;
     cursor: grab;
-    margin: 24px 0 20px;
+    margin: 24px 0 10px;
     min-width: 370px;
+    overflow: scroll;
 }
 .outer-slider::-webkit-scrollbar {
     display: none;
 }
-.inner-slider {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: fit-content;
-    width: 100%;
+.explore-communities .card, .explore-communities  .events-card{
+    margin: 0;
+}
+.explore-head{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    gap: 20px;
+    max-width: 1260px;
+}
+.arrow{
+    position: relative;
+    top: 10px;
+}
+.swiper-button-prev{
+    left: -40px !important;
+}
+.swiper-button-next{
+    left: -70px !important;
+}
+.swiper-button-prev, .swiper-button-next{
+    height: 27px !important;
 }
 
-/* === Live Events ==== */
+/* ========= Live Events ======== */
 .live-events-bg {
     background: #6A4EE3;
     color: white;
@@ -399,7 +453,7 @@ header .swiper-pagination-bullet{
 }
 .event-card-img {
     width: inherit;
-    max-width: 300px;
+    max-width: 298px;
     height: 190px;
     border-radius: 8px 8px 0 0;
 }
@@ -468,7 +522,7 @@ header .swiper-pagination-bullet{
     margin: 0 8px;
 }
 
-/* ==== Challenges ==== */
+/* ======== Challenges ======== */
 .challenges-bg {
     background: #F8F7FD;
 }
@@ -518,7 +572,7 @@ header .swiper-pagination-bullet{
 .challenge-flex {
     display: flex;
     align-items: center;
-    gap: 0px;
+    gap: 0;
 }
 .challenge-flex span {
     font-weight: 600;
@@ -538,7 +592,7 @@ header .swiper-pagination-bullet{
     left: 50px;
 }
 
-/* ===== Creators ===== */
+/* ========= Creators ======== */
 .creators-bg {
     background: #000000;
     color: white;
@@ -561,9 +615,10 @@ header .swiper-pagination-bullet{
 }
 .creator-card img {
     width: inherit;
-    max-width: 285px;
+    max-width: 282px;
     height: 240px;
     background: #FFFFFF;
+    border-radius: 16px 16px 0 0;
 }
 .creator-card-text {
     width: 100%;
@@ -582,16 +637,16 @@ header .swiper-pagination-bullet{
 }
 
 
-/* ==== Monetize ===== */
+/* ======== Monetize ======= */
 .monetize-bg {
     background: #F8F7FD;
-    padding: 64px 0px;
+    padding: 64px 0;
 }
 .monetize-bg .grid-container{
     padding: 10px;
 }
 
-/* ==== Blog ===== */
+/* ======== Blog ======== */
 .margin-container {
     margin: 120px 0;
 }
@@ -603,7 +658,8 @@ header .swiper-pagination-bullet{
 }
 .blog-card img {
     border-radius: 16px 16px 0 0;
-    max-width: 375px;
+    /* max-width: 375px; */
+    max-width: 300px;
 }
 .blog-text {
     padding: 32px;
@@ -677,7 +733,7 @@ header .swiper-pagination-bullet{
 }
 
 
-/* ==== Footer ====== */
+/* ======= Footer ======= */
 footer {
     max-width: 1300px;
     margin: 0 auto;
@@ -754,6 +810,9 @@ footer {
     color: #6F6F6F;
     margin: 5px 0;
 }
+footer a:hover{
+    font-weight: 700;
+}
 .footer-link-col .cta {
     display: flex;
     gap: 20px;
@@ -792,49 +851,19 @@ footer {
 
 /* ====== Media Queries ======= */
 @media (min-width: 410px) {
-    .logo {
-        order: 0;
-        grid-column-start: 1;
-        grid-column-end: 4;
+    .logo{
+        grid-column-end: 1;
     }
-    .nav-btns {
-        grid-column-start: 7;
-        grid-column-end: 8;
-        order: 1;
-    }
-    .nav-btns a {
-        margin: 0px;
-    }
-    .form {
-        grid-column-start: 10;
-        order: 2;
-    }
-    #sign-up {
-        display: none;
-    }
-    #sign-in {
-        background: #F4F4F4;
-        border-radius: 24px;
-    }
-    .hamburger {
-        grid-column-start: 11;
-        grid-column-end: 13;
-        order: 3;
-    }    
-}
-@media (min-width: 400px) {
     .nav-btns {
         grid-column-start: 5;
-        padding: 0 10px;
     }
-}
-@media (min-width: 500px) {
     #sign-up{
-        min-width: 380px;
+        margin-right: 6px;
     }
 }
 @media (min-width: 708px) {
-    /* ==== Grid Container ====== */
+
+    /* ======== Grid Container ======= */
     .grid-container {
         grid-template-columns: repeat(6, 1fr);
         max-width: 600px;
@@ -844,44 +873,44 @@ footer {
         grid-column: span 6;
     }
 
-    /* ====== Navigation Bar ====== */
+    /* ======= Navigation Bar ======= */
     nav.grid-container {
         display: flex;
         width: 100%;
-        margin: 0;
-        max-width: 100%;
-    }
-    .logo {
-        order: 0;
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 10px 0 10px 15px;
     }
     .nav-menu {
         display: flex;
         order: 1;
         width: 53%;
+        flex-direction: row;
+        background-color: transparent;
+        position: static;
+        padding: 0;
+        gap: 0;
     }
-    .nav-item a {
-        margin: 0 5px;
+    nav a {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 24px;
+        color: black;
+        margin: 0;
     }
-    #sign-up {
-        display: none;
-    }
-    .form {
-        order: 2;
+    .nav-menu a{
+        font-size: 12px;
+        position: static;
+        width: fit-content;
     }
     .nav-btns {
         order: 3;
     }
-    .nav-btns a {
-        margin: 0;
-    }
     .hamburger {
         display: none;
     }
-    #sign-up {
-        display: inline;
-    }
 
-    /* ===== Common Style ===== */
+    /* ======== Common Style ======= */
     .main-headings {
         width: 100%;
         max-width: 100%;
@@ -890,15 +919,24 @@ footer {
         font-size: 24px;
         width: 100%;
         max-width: 100%;
-        margin: 24px 0px;
+        margin: 24px 0;
     }
 
-    /* ===== Explore ====== */
+    /* ========= Explore ======== */
     .explore-communities.grid-container {
+        max-width: 600px;
         margin: 120px auto;
+        padding: 0 20px;
     }
-    
-    /* ==== Footer ===== */
+    .explore-communities:last-child.grid-container {
+        margin: 0;
+    }
+    .outer-slider{
+        max-width: 600px;
+        margin: 10px auto 24px;
+    }
+
+    /* ========= Footer ========= */
     .footer-creator {
         display: flex;
         gap: 15vw;
@@ -925,8 +963,9 @@ footer {
         color: gray;
     }
 }
-@media (min-width: 870px) {
-    /* ==== Grid Container ====== */
+@media (min-width: 920px) {
+    
+    /* ========= Grid Container ======= */
     .grid-container {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -934,6 +973,7 @@ footer {
         width: 100%;
         max-width: 1280px;
         margin: 0 auto;
+        padding:20px  0;
     }
     .col-1 {
         grid-column: span 1;
@@ -972,195 +1012,45 @@ footer {
         grid-column: span 12;
     }
     .grid-col {
-        grid-column-start: 2;
+        grid-column-start:  2;
         grid-column-end: 12;
     }
 
-    /* ==== Navigation Bar ====== */
+    /* ======== Navigation Bar ======= */
     nav.grid-container {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         max-width: 1260px;
         width: 100%;
         margin: 0 auto;
+        padding: 10px;
+    }
+    .logo{
+        grid-column-start: 2;
     }
     .nav-menu {
         width: fit-content;
         grid-column-start: 3;
-        grid-column-end: 5;
+        grid-column-end: 4;
     }
     .form {
-        grid-column-start: 9;
-        grid-column-end: 9;
+        grid-column-start: 6;
+        grid-column-end: 6;
     }
     .nav-btns {
-        grid-column-start: 10;
+        grid-column-start: 7;
         grid-column-end: 13;
     }
-    .wrapper {
-        margin: 0 auto;
-        top: 0;
-    }
 
-    /* ===== Common Style ===== */
+    /* ========= Common Style ======== */
     .main-headings {
-        max-width: 86%;
+        max-width: 90%;
     }
     .main-desc {
-        max-width: 80%;
+        max-width: 90%;
     }
 
-    /* ====== Explore ======= */
-    .explore-communities.grid-container {
-        padding: 0 0 0 30px;
-    }
-    .explore-challenges .outer-slider {
-        margin: 0;
-    }
-    .explore-challenges .inner-slider {
-        position: static;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(3, auto);
-        column-gap: 5px;
-    }
-
-    /* ===== Challenge ===== */
-    .challenge-card {
-        max-width: 320px;
-    }
-    .challenge-card-img {
-        max-width: 320px;
-    }
-    .challenge-card-heading {
-        font-size: 20px;
-    }
-    .challenge-flex span {
-        font-size: 11px;
-    }
-    #challenge2 {
-        left: 5vw;
-    }
-    .challenge-card-footer {
-        gap: 5px;
-    }
-    .challenge-card-creator {
-        margin-left: 10px;
-    }
-
-    /* ===== Join ===== */
-    .join-bg {
-        min-height: 96vh;
-    }
-    .join-bg .section-text {
-        margin: 100px 0;
-    }
-    .join-bg .wrapper {
-        width: 400px;
-        height: 400px;
-    }
-    .join-bg .card {
-        top: -90px;
-        left: -35px;
-    }
-    .join-bg .cta {
-        flex-direction: column;
-    }
-    .join-bg .cta a {
-        margin: 0;
-    }
-    #mobile {
-        width: 470px;
-        height: 680px;
-    }
-
-    /* ==== Footer ==== */
-    .footer-links .cta {
-        margin: 20px 0;
-        flex-direction: row;
-        gap: 20px;
-    }
-
-}
-@media (min-width: 850px) {
-    .challenge-card {
-        max-width: 340px;
-    }
-    .challenge-card-img {
-        max-width: 340px;
-    }
-}
-@media (min-width: 1000px) {
-    /* ==== Navigation Bar ====== */
-    .nav-menu {
-        grid-column-end: 9;
-    }
-    .form {
-        grid-column-start: 9;
-        grid-column-end: 9;
-    }
-    .nav-btns {
-        grid-column-start: 10;
-        grid-column-end: 13;
-    }
-    #sign-up {
-        margin-right: 20px;
-    }
-    #nav-search {
-        display: inline;
-    }
-    #search-icon {
-        display: none;
-    }
-
-    /* ==== Challenge ==== */
-    .challenge-card, .challenge-card-img {
-        max-width: 380px;
-    }
-
-    /* ==== Join ==== */
-    .join-bg .cta {
-        flex-direction: row;
-    }
-    #mobile {
-        height: 650px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .grid-col {
-        grid-column: span 12;
-    }
-
-    /* ==== Navigation Bar ====== */
-    .nav-menu {
-        grid-column-end: 5;
-    }
-    .form {
-        grid-column-start: 7;
-        grid-column-end: 8;
-    }
-    .nav-btns {
-        grid-column-start: 10;
-        grid-column-end: 13;
-    }
-
-    /* ==== Common Style ===== */
-    .section-container {
-        padding: 120px 0px;
-    }
-    .main-headings {
-        font-size: 4rem;
-        line-height: 4.3rem;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    /* === Header === */
-    header .section-container {
-        padding: 120px 0 0;
-    }
+    /* ======== Header ======== */
     /* Card */
     .wrapper {
         width: 470px;
@@ -1197,6 +1087,190 @@ footer {
         bottom: 15%;
     }
 
+    .blog-card img{
+        max-width: 375px;
+    }
+
+    /* ========= Events =========== */
+    /* Event Card */
+    .events-card {
+        background-color: white;
+        width: 100%;
+        max-width: fit-content;
+        border-radius: 8px;
+        margin: 0 auto 35px;
+    }
+    .event-card-img {
+        width: inherit;
+        max-width: 500px;
+    }
+    .event-card-text {
+        padding: 16px;
+        min-width: 330px;
+    }
+    .explore-head h2{
+        font-size: 1.5rem;
+    }
+
+    /* ========= Explore ======== */
+    .explore-communities.grid-container {
+        padding: 0 20px;
+        margin: 120px auto;
+        max-width: 1280px;
+    }
+    .explore-communities:last-child.grid-col{
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .explore-challenges .swiper-wrapper{
+        display: grid !important;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+    }
+    .outer-slider{
+        max-width: 1280px;
+        margin: 24px 0;
+    }
+
+    /* ========= Challenge ======== */
+    .challenges-bg{
+        padding-bottom: 70px;
+    }
+    .challenge-card {
+        max-width: 320px;
+    }
+    .challenge-card-img {
+        max-width: 320px;
+    }
+    .challenge-card-heading {
+        font-size: 20px;
+    }
+    .challenge-flex span {
+        font-size: 11px;
+    }
+    #challenge2 {
+        left: 3vw;
+    }
+    .challenge-card-footer {
+        gap: 5px;
+    }
+    .challenge-card-creator {
+        margin-left: 10px;
+    }
+
+    /* ========= Join ======== */
+    .join-bg {
+        min-height: 96vh;
+    }
+    .join-bg .section-text {
+        margin: 100px 0;
+    }
+    .join-bg .wrapper {
+        width: 400px;
+        height: 400px;
+    }
+    .join-bg .card {
+        top: -90px;
+        left: -35px;
+    }
+    .join-bg .cta {
+        flex-direction: column;
+    }
+    .join-bg .cta a {
+        margin: 0;
+    }
+    #mobile {
+        width: 470px;
+        height: 680px;
+    }
+
+    /* ========= Footer ======== */
+    .footer-links .cta {
+        margin: 20px 0;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+}
+@media (min-width: 1000px) {
+
+    /* ========= Navigation Bar ======== */
+    .logo{
+        grid-column-start: 1;
+    }
+    .nav-menu {
+        grid-column-start: 2;
+        grid-column-end: 9;
+    }
+    .form {
+        grid-column-start: 9;
+        grid-column-end: 9;
+    }
+    .nav-btns {
+        grid-column-start: 10;
+        grid-column-end: 13;
+    }
+    #sign-up {
+        margin-right: 20px;
+    }
+    #nav-search {
+        display: inline;
+        padding-left: 40px;
+        background: #F4F4F4 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center
+    }
+    #search-icon {
+        display: none;
+    }
+
+    /* ========= Challenge ======== */
+    .challenge-card, .challenge-card-img {
+        max-width: 380px;
+    }
+
+    /* ======== Join ======== */
+    .join-bg .cta {
+        flex-direction: row;
+    }
+    #mobile {
+        height: 650px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .grid-col {
+        grid-column: span 12;
+    }
+
+    /* ======== Navigation Bar ======= */
+    .nav-menu {
+        grid-column-end: 3;
+    }
+    .form {
+        grid-column-start:3;
+        grid-column-end: 7;
+    }
+    .nav-btns {
+        grid-column-start: 10;
+        grid-column-end: 13;
+    }
+
+    /* ========= Common Style ======= */
+    .section-container {
+        padding: 120px 0px;
+    }
+    .main-headings {
+        font-size: 4rem;
+        line-height: 4.3rem;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* ========= Header ========== */
+    header .section-container {
+        padding: 120px 0 0;
+    }
+    
     /* Dive Into */
     .dive-pointer {
         margin: 48px 32px 0;
@@ -1208,7 +1282,7 @@ footer {
         max-width: 300px;
     }
 
-    /* ==== Events ==== */
+    /* ========== Events ========= */
     .live-events-bg, .challenges-bg {
         padding: 0 20px;
     }
@@ -1216,23 +1290,9 @@ footer {
         width: 480px;
         height: 450px;
     }
-    .events-card {
-        background-color: white;
-        width: 100%;
-        max-width: 400px;
-        border-radius: 8px;
-        margin: 0 auto 35px;
-    }
-    .event-card-img {
-        width: inherit;
-        max-width: 400px;
-    }
-    .event-card-text {
-        padding: 16px;
-        min-width: 390px;
-    }
 
-    /* ==== Challenges ===== */
+
+    /* ========== Challenges ========== */
     .challenges-bg .main-headings {
         width: 100%;
         max-width: 80%;
@@ -1249,38 +1309,30 @@ footer {
         height: 400px;
         margin: 0;
     }
-    .challenge-card {
-        max-width: 340px;
+    .challenge-card, .challenge-card-img{
+        max-width: 390px;
     }
-    .challenge-card-img {
-        max-width: 340px;
+    #challenge2 {
+        left: 9vw;
     }
 
-    /* ==== Explore ===== */
-    .explore-challenges .inner-slider {
+    /* ========== Explore ======== */
+    .explore-challenges .swiper-wrapper {
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(3, auto);
     }
     .explore-communities:last-child.grid-container {
-        margin: 0px 0 0 -10px;
+        margin: 0 auto;
+        max-width: 1280px;
     }
 
-    /* === Monetize */
+    /* ======== Monetize ======== */
     .monetize-bg .section-text {
         width: 80%;
-        margin: 0;
+        margin: 0 20px;
     }
 
-    /* ==== JOIN ==== */
-    .join-bg {
-        min-height: 100vh;
-    }
-    .join-bg .section-text {
-        margin: 100px 0;
-    }
-    .join-bg .card {
-        top: -50px;
-    }
+    /* ======== Blogs ========= */
     .margin-container .section-text{
         grid-column-start: 1;
         grid-column-end: 9;
@@ -1288,17 +1340,16 @@ footer {
     .margin-container .main-headings{
         width: 85%;
     }
-}
 
-@media (min-width: 1400px) {
-    .challenge-card {
-        max-width: 380px;
+    /* ==== JOIN ==== */
+    .join-bg {
+        min-height: 100vh;
     }
-    .challenge-card-img {
-        max-width: 380px;
+    .join-bg .section-text {
+        margin: 100px 20px;
     }
-    .challenge-card-creator {
-        margin-left: 50px;
+    .join-bg .card {
+        top: -50px;
     }
 }
 

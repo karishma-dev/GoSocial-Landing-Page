@@ -1,3 +1,4 @@
+// BlogCard Component
 export default function BlogCard({img}){
     return (
         <div className="blog-card">

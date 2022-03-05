@@ -1,3 +1,4 @@
+// CreatorCard Component
 export default function CreatorCard({img}){
     return (
         <div className="creator-card">

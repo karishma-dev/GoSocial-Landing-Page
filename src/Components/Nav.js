@@ -1,4 +1,24 @@
+// Navigation Bar Component
 export default function Nav(){
+
+    // Function to open the hamburger menu in mobile phones
+    function showMenu(){
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        const navItem = document.querySelectorAll(".nav-item");
+
+        hamburger.addEventListener("click", function(){
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        })
+
+        navItem.forEach((item) => {
+            item.addEventListener("click", function(){
+                hamburger.classList.remove("active")
+                navMenu.classList.remove("active");
+            })
+        });
+    }
 
     return (
 
@@ -17,28 +37,28 @@ export default function Nav(){
             {/* Navigation Menu */}
             <ul className="nav-menu col-4">
 
-                {/* Nav item */}
+                {/* Nav item: Home */}
                 <li className="nav-item">
                     <a href="#">
                         Home
                     </a>
                 </li>
 
-                {/* Nav item */}
+                {/* Nav item: Communities */}
                 <li className="nav-item">
                     <a href="#">
                         Communities
                     </a>
                 </li>
 
-                {/* Nav item */}
+                {/* Nav item: Workshops */}
                 <li className="nav-item">
                     <a href="#">
                         Workshops
                     </a>
                 </li>
 
-                {/* Nav item */}
+                {/* Nav item: Challenges */}
                 <li className="nav-item">
                     <a href="#">
                         Challenges
@@ -60,7 +80,7 @@ export default function Nav(){
             </div>
 
             {/* Hamburger */}
-            <span className="hamburger"><img src="images/Hamburger.svg" alt="" /></span>
+            <span className="hamburger" onClick={showMenu}><img src="images/Hamburger.svg" alt="" /></span>
 
         </nav>
     );
