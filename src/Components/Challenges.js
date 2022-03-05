@@ -28,7 +28,7 @@ export default function Events(){
                         <img src="images/black-star.png" alt="" className="star black-star" />
                         <img src="images/yellow-star.png" alt="" className = "star yellow-star" />
                         <ChallengeCard img="images/Challenge1.png" id="challenge1"/>
-                        <ChallengeCard img="images/Challenge2.png" id="challenge2"/>
+                        <ChallengeCard img="images/challenge2.png" id="challenge2"/>
                     </div>
 
                 </div>
