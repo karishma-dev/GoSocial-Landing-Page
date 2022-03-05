@@ -59,9 +59,9 @@ export default function Explore({heading, linkText}){
                         <h2>
                             {h}
                         </h2>
-                        <div class="arrow">
-                            <img src="images/CaretLeft.png" alt="" class="swiper-button-next" /> 
-                            <img src="images/CaretRight.png" alt="" class="swiper-button-prev" />
+                        <div className="arrow">
+                            <img src="images/CaretLeft.png" alt="" className="swiper-button-next" /> 
+                            <img src="images/CaretRight.png" alt="" className="swiper-button-prev" />
                         </div>
                    </div>;
         }

@@ -2,29 +2,29 @@
 export default function WorkshopCard({img}){
 
     return (
-        <div class="events-card">
-            <img src={img} alt="" class="event-card-img" />
-            <div class="event-card-text">
-                <span class="multiple-session">
+        <div className="events-card">
+            <img src={img} alt="" className="event-card-img" />
+            <div className="event-card-text">
+                <span className="multiple-session">
                     Multiple Sessions
                 </span>
-                <div class="event-card-head">
-                    <p class="event-heading">
+                <div className="event-card-head">
+                    <p className="event-heading">
                         NFTS for Artists & Designers
                     </p>
-                    <p class="event-hoster">
+                    <p className="event-hoster">
                         Hosted by Melvin Thambi, UI Design Lead
                     </p>
                 </div>
-                <div class="event-date">
+                <div className="event-date">
                     <img src="images/CalendarBlank.png" alt="" />
                     <span>
                         Aug 14, 2021 to Sep 14, 2021
                     </span>
                 </div>
-                <div class="event-rate">
-                    <span class="event-original-rate">Rs. 3,200</span>
-                    <span class="event-discount-rate">Rs. 3000</span>
+                <div className="event-rate">
+                    <span className="event-original-rate">Rs. 3,200</span>
+                    <span className="event-discount-rate">Rs. 3000</span>
                 </div>
             </div>
         </div>
