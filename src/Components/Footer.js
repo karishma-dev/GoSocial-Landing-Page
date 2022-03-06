@@ -14,8 +14,7 @@ export default function Footer(){
                 {/* Privacy Description */}
                 <p id="privacy-desc">
                     By using www.gosocial.io(our website), you are fully accepting the Privacy Policy available at 
-                    <a href = "#"> https://gosocial.io/privacy</a>
-                    governing your access to Gosocial and provision of services by Gosocial to you. 
+                    <a href = "#"> https://gosocial.io/privacy</a> governing your access to GoSocial and provision of services by GoSocial to you. 
                     If you do not accept terms mentioned in the  
                     <a href = "#"> Privacy Policy</a>, 
                     you must not share any of your personal information and immediately exit Gosocial.
