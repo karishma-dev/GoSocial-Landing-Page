@@ -49,7 +49,7 @@ export default function Explore({heading, linkText}){
     function HeadingText (){
         let text;
         let h = heading === "GoSocial Blogs" ? heading : `Exlpore ${heading}`;
-    
+        let c = heading === "Challenges" ? true : false;
         if(heading === "Meet Our Pro Creators"){
             text = <SectionText heading="Meet Our Pro Creators"
             desc = "Learn from the creators who’ve done it all. Join their communities on GoSocial and interact with other members."
@@ -59,10 +59,12 @@ export default function Explore({heading, linkText}){
                         <h2>
                             {h}
                         </h2>
-                        <div className="arrow">
-                            <img src="images/CaretLeft.png" alt="" className="swiper-button-next" /> 
-                            <img src="images/CaretRight.png" alt="" className="swiper-button-prev" />
-                        </div>
+                        { c ? "" :
+                            <div className="arrow">
+                                <img src="images/CaretLeft.png" alt="" className="swiper-button-next" /> 
+                                <img src="images/CaretRight.png" alt="" className="swiper-button-prev" />
+                            </div>
+                        }
                    </div>;
         }
         return text;
