@@ -740,7 +740,7 @@ footer {
     min-width: 428px;
 }
 .privacy-note {
-    padding: 8px 24px 32px;
+    padding: 20px 24px 32px;
 }
 .privacy-note h3 {
     font-weight: 500;
@@ -753,8 +753,9 @@ footer {
     margin: 8px 0;
 }
 #privacy-desc {
+    font-weight: 500;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 18px;
     color: #A8A8A8;
 }
 #privacy-desc a {
@@ -971,7 +972,7 @@ footer a:hover{
         grid-template-columns: repeat(12, 1fr);
         column-gap: 20px;
         width: 100%;
-        max-width: 1280px;
+        max-width: 1300px;
         margin: 0 auto;
         padding:20px  0;
     }
@@ -1020,7 +1021,7 @@ footer a:hover{
     nav.grid-container {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        max-width: 1260px;
+        max-width: 1280px;
         width: 100%;
         margin: 0 auto;
         padding: 10px;
@@ -1047,7 +1048,7 @@ footer a:hover{
         max-width: 90%;
     }
     .main-desc {
-        max-width: 90%;
+        max-width: 77%;
     }
 
     /* ======== Header ======== */
@@ -1080,7 +1081,7 @@ footer a:hover{
         padding: 0 25px;
     }
     .members span {
-        margin-left: 110px;
+        margin-left: 130px;
     }
     .yellow-star {
         right: 0;
@@ -1116,7 +1117,7 @@ footer a:hover{
     .explore-communities.grid-container {
         padding: 0 20px;
         margin: 120px auto;
-        max-width: 1280px;
+        max-width: 1300px;
     }
     .explore-communities:last-child.grid-col{
         grid-column-start: 1;
@@ -1128,7 +1129,7 @@ footer a:hover{
         grid-template-rows: repeat(3, auto);
     }
     .outer-slider{
-        max-width: 1280px;
+        max-width: 1300px;
         margin: 24px 0;
     }
 
