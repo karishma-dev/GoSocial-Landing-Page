@@ -1,6 +1,6 @@
 # GoSocial Landing Page Clone
 
-[GoSocial](https://gosocial.io/) is an app for creators that enables them to build an engaged community and monetize their expertise. On GoSocial, creators can host offerings, create challenges and host workshops. The platform works on the concept of #100TrueFans and aims to provide a constant source of monetization to creators accross a plethora of domains. It is a sub-organization of [Hapramp Studio](https://github.com/hapramp).
+[GoSocial](https://gosocial.io/) is an app for creators that enables them to build an engaged community and monetize their expertise. On GoSocial, creators can host offerings, create challenges, and host workshops. The platform works on the concept of #100TrueFans and aims to provide a constant source of monetization to creators across a plethora of domains. It is a sub-organization of [Hapramp Studio](https://github.com/hapramp).
 
 ## Table of contents
 
@@ -39,7 +39,7 @@ This project is really special to me as it was given to me by my brother [Charch
 
 ### What I learned
 
-- I learned how to use the 12 column CSS grid layout in a website for a Responsive Design.
+- I learned how to use the 12 column CSS grid layout in a website for responsive design.
 - I learned about the Swiper API.
 
 ### Continued development
