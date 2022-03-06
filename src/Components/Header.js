@@ -43,7 +43,7 @@ export default function Header(){
                     <SectionText 
                         welcome = "Welcome to GoSocial" 
                         heading = "Find your Favourite Communities On The Internet" 
-                        desc = "Discover communities of your favorite creators and upskill with live workshops, discussions, and challenges."
+                        desc = "Discover communities of your favourite creators and upskill with live workshops, discussions, and challenges."
                         location = "header" />
                     
                     {/* SwiperCard Component */}
