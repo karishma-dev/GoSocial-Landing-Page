@@ -11,12 +11,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 // Arrays
-const CommunityArray = ["images/Community1.png", "images/Community2.png", "images/Community3.png", "images/Community1.png", "images/Community2.png", "images/Community3.png"];
-const WorkshopArray = ["./images/event1.png", "./images/event2.png", "./images/event3.png", "images/event1.png", "images/event2.png", "images/event3.png"];
-const ChallengeArray = ["images/challenge3.png","images/challenge4.png", "images/challenge5.png", 
-                        "images/challenge6.png","images/challenge7.png", "images/challenge8.png"];
-const CreatorArray = ["images/creator1.png", "images/creator2.png", "images/creator3.png", "images/creator4.png", "images/creator1.png", "images/creator2.png", "images/creator3.png", "images/creator4.png"];
-const blogArray = ["images/blog1.png", "images/blog2.png", "images/blog3.png", "images/blog1.png", "images/blog2.png", "images/blog3.png"];
+const CommunityArray = ["images/community1.svg", "images/community2.svg", "images/community3.svg", "images/community1.svg", "images/community2.svg", "images/community3.svg"];
+const WorkshopArray = ["images/event1.svg", "images/event2.svg", "images/event3.svg", "images/event1.svg", "images/event2.svg", "images/event3.svg"];
+const ChallengeArray = ["images/challenge3.svg","images/challenge4.svg", "images/challenge5.svg", 
+                        "images/challenge6.svg","images/challenge7.svg", "images/challenge8.svg"];
+const CreatorArray = ["images/creator1.svg", "images/creator2.svg", "images/creator3.svg", "images/creator4.svg", "images/creator1.svg", "images/creator2.svg", "images/creator3.svg", "images/creator4.svg"];
+const blogArray = ["images/blog1.svg", "images/blog2.svg", "images/blog3.svg", "images/blog1.svg", "images/blog2.svg", "images/blog3.svg"];
 
 export default function Explore({heading, linkText}){
 

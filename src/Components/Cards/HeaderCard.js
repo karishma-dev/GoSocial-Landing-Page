@@ -15,7 +15,7 @@ export default function HeaderCard({img}){
                         </span>  */}
                     </div>
                     <div className="creator">
-                        <img src="images/member5.png" alt="" className="creator-img" />
+                        <img src="images/member5.png" alt="Sakshi K Sidhu" className="creator-img" />
                         <span>By Sakshi K Sidhu</span>
                     </div>  
                 </div>
@@ -25,11 +25,11 @@ export default function HeaderCard({img}){
             </div>
             <div className="members">
                 <div className="members-img">
-                    <img src="images/member1.png" alt="" className="img-77" />
-                    <img src="images/member2.png" alt="" className="img-78" />
-                    <img src="images/member3.png" alt="" className="img-83" />
-                    <img src="images/member4.png" alt="" className="img-79" />
-                    <img src="images/member5.png" alt="" className="img-80" />
+                    <img src="images/member1.png" alt="Member 1" className="img-77" />
+                    <img src="images/member2.png" alt="Member 2" className="img-78" />
+                    <img src="images/member3.png" alt="Member 3" className="img-83" />
+                    <img src="images/member4.png" alt="Member 4" className="img-79" />
+                    <img src="images/member5.png" alt="Member 5" className="img-80" />
                 </div>
                 <span>
                     +12,294 Members

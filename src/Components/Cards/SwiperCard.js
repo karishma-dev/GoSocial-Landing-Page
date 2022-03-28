@@ -16,10 +16,10 @@ export default function SwiperCard({location}){
         let card;
         switch (location){
             case "Communities":
-                card = Array.from({length: 3}, (i) => <HeaderCard img="images/Community1.png" />);
+                card = Array.from({length: 3}, (i) => <HeaderCard img="images/header-card.svg" />);
                 break;
             case "Events":
-                card = Array.from({length: 3}, (i) => <WorkshopCard img="images/event1.png" />);
+                card = Array.from({length: 3}, (i) => <WorkshopCard img="images/event1.svg" />);
                 break;
             default:
                 return "Error...";
@@ -30,8 +30,8 @@ export default function SwiperCard({location}){
     return (
 
         <div className="wrapper col-5">
-            <img src="images/black-star.png" alt="" className="star black-star" />
-            <img src="images/yellow-star.png" alt="" className = "star yellow-star" />
+            <img src="images/black-star.svg" alt="" className="star black-star" />
+            <img src="images/yellow-star.svg" alt="" className = "star yellow-star" />
 
             {/* Swiper */}
             <Swiper

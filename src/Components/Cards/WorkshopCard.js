@@ -17,7 +17,7 @@ export default function WorkshopCard({img}){
                     </p>
                 </div>
                 <div className="event-date">
-                    <img src="images/CalendarBlank.png" alt="" />
+                    <img src="images/CalendarBlank.png" alt="Event Date" />
                     <span>
                         Aug 14, 2021 to Sep 14, 2021
                     </span>

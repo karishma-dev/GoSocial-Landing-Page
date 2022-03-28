@@ -28,9 +28,9 @@ export default function Nav(){
             {/* Logo */}
             <a href="#" className="logo col-2">
                 <picture>
-                    <source media="(max-width: 780px)" width = "46" height = "20" srcSet="images/Logo-mobile.svg" />
-                    <source media="(min-width: 780px)" width = "112" height = "16" srcSet="images/Logo.svg" />
-                    <img src="images/Logo.svg" alt="" />
+                    <source media="(max-width: 780px)" width = "46" height = "20" srcSet="images/Logo-mobile.svg" alt="GoSocial Logo"/>
+                    <source media="(min-width: 780px)" width = "112" height = "16" srcSet="images/Logo.svg" alt="GoSocial Logo"/>
+                    <img src="images/Logo.svg" alt="GoSocial Logo" />
                 </picture>
             </a>
 

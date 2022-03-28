@@ -43,10 +43,10 @@ export default function Footer(){
             {/* Footer Links */}
             <div className="footer-links col-12 grid-col">
                 <div className="footer-link-col">
-                    <a href="#"><img src="images/Logo.svg" alt="" /></a>
+                    <a href="#"><img src="images/Logo.svg" alt="GoSocial Logo" /></a>
                     <div className="cta">
-                        <a href="#"><img src="images/google-store.png" alt="" /></a>
-                        <a href="#"><img src="images/apple-store.png" alt="" /></a>
+                        <a href="#"><img src="images/google-store.svg" alt="Google Store" /></a>
+                        <a href="#"><img src="images/apple-store.svg" alt="Apple Store" /></a>
                     </div>
                 </div>
                 <div className="footer-link-col" id="creator-studio">

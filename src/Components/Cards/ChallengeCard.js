@@ -9,15 +9,15 @@ export default function ChallengeCard({img, id}){
                 </span>
                 <div className="challenge-card-footer">
                     <div className="challenge-card-users challenge-flex">
-                        <img src="images/Users.png" alt="" />
+                        <img src="images/Users.png" alt="User Number" />
                         <span>12,294</span>
                     </div>
                     <div className="challenge-card-posts challenge-flex">
-                        <img src="images/challenge-card-rating.png" alt="" />
+                        <img src="images/challenge-card-rating.png" alt="Challenge Rating" />
                         <span>12,294</span>
                     </div>
                     <div className="challenge-card-creator challenge-flex">
-                        <img src="images/challenge-creator.png" alt="" />
+                        <img src="images/challenge-creator.png" alt="Challenge Creator" />
                         <span>By GoSocial App</span>
                     </div>
                 </div>

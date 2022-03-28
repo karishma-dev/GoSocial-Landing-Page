@@ -22,10 +22,10 @@ export default function Join(){
 
                     {/*  Mobile Phone Illustration */}
                     <div className="wrapper col-5">
-                        <img src="images/black-star.png" alt="" className="star black-star" />
-                        <img src="images/yellow-star.png" alt="" className = "star yellow-star" />
+                        <img src="images/black-star.svg" alt="" className="star black-star" />
+                        <img src="images/yellow-star.svg" alt="" className = "star yellow-star" />
                         <div className="card">
-                            <img src="images/Mobile.png" alt="" id="mobile" />
+                            <img src="images/Mobile.svg" alt="" id="mobile" />
                         </div>
                     </div>
 

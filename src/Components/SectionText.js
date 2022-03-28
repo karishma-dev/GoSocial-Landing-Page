@@ -25,15 +25,15 @@ export default function SectionText({welcome, heading, desc, linkText, location}
 function Cta({location}){
     let secondCta;
     if(location === "header"){
-        secondCta = <a id="join-link">Join GoSocial &#8594;</a>;
+        secondCta = <a href = "#" id="join-link">Join GoSocial &#8594;</a>;
     }else if(location ==="Creator"){
         return "";
     }else{
-        secondCta = <a href="#"><img src="images/apple-store.png" alt="" /></a>;
+        secondCta = <a href="#"><img src="images/apple-store.svg" alt="Apple Store" /></a>;
     }
     return(
         <div className="cta">
-            <a href="#"><img src="images/google-store.png" alt="" /></a>
+            <a href="#"><img src="images/google-store.svg" alt="Google Store" /></a>
             {secondCta}
         </div> 
     )

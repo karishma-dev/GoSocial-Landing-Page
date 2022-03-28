@@ -2,7 +2,7 @@
 export default function CreatorCard({img}){
     return (
         <div className="creator-card">
-            <img src={img} alt=""/>
+            <img src={img} alt="Drishti Verma"/>
             <div className="creator-card-text">
                 <p className="creator-name">
                     Drishti Verma

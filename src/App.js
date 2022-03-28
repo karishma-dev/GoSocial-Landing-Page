@@ -9,7 +9,7 @@ import Creator from './Components/Creator';
 import Monetize from './Components/Monetize';
 import Blog from './Components/Blog';
 import Join from './Components/Join';
-import "./style/combined.css";
+import "../src/combined.css";
 
 // App Component
 export default function App() {
