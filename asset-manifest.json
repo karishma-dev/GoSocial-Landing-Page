@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/GoSocial-Landing-Page/static/css/main.2ef2a5e2.css",
-    "main.js": "/GoSocial-Landing-Page/static/js/main.ef1dfb2d.js",
+    "main.css": "/GoSocial-Landing-Page/static/css/main.9cf17ff7.css",
+    "main.js": "/GoSocial-Landing-Page/static/js/main.78157ed2.js",
     "static/js/787.48be34d3.chunk.js": "/GoSocial-Landing-Page/static/js/787.48be34d3.chunk.js",
     "index.html": "/GoSocial-Landing-Page/index.html",
-    "main.2ef2a5e2.css.map": "/GoSocial-Landing-Page/static/css/main.2ef2a5e2.css.map",
-    "main.ef1dfb2d.js.map": "/GoSocial-Landing-Page/static/js/main.ef1dfb2d.js.map",
+    "main.9cf17ff7.css.map": "/GoSocial-Landing-Page/static/css/main.9cf17ff7.css.map",
+    "main.78157ed2.js.map": "/GoSocial-Landing-Page/static/js/main.78157ed2.js.map",
     "787.48be34d3.chunk.js.map": "/GoSocial-Landing-Page/static/js/787.48be34d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ef2a5e2.css",
-    "static/js/main.ef1dfb2d.js"
+    "static/css/main.9cf17ff7.css",
+    "static/js/main.78157ed2.js"
   ]
 }
