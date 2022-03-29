@@ -7,10 +7,8 @@ export default function Nav(){
         const navMenu = document.querySelector(".nav-menu");
         const navItem = document.querySelectorAll(".nav-item");
 
-        hamburger.addEventListener("click", function(){
-            hamburger.classList.toggle("active");
-            navMenu.classList.toggle("active");
-        })
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
 
         navItem.forEach((item) => {
             item.addEventListener("click", function(){
