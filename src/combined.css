@@ -10,6 +10,7 @@
 /* Body */
 body {
     background-color: white;
+    min-width: 370px;
 }
 li {
     list-style: none;
@@ -28,7 +29,7 @@ a {
     align-items: center;
     height: fit-content;
     padding: 10px;
-    min-width: 320px;
+    /* min-width: 320px; */
 }
 .col-1,.col-2,.col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .grid-col {
     grid-column: span 12;
@@ -87,7 +88,7 @@ a {
     color: white;
 }
 .live-events-bg, .challenges-bg, .creators-bg, .join-bg, .monetize-bg, .explore-communities {
-    min-width: 428px;
+    min-width: 370px;
 }
 .swiper-pagination-bullet{
     background-color: white !important;
@@ -99,7 +100,7 @@ nav {
     width: fit-content;
 }
 nav.grid-container{
-    min-width: 428px;
+    /* min-width: 428px; */
     padding: 15px 30px;
 }
 .nav-menu {
@@ -113,7 +114,7 @@ nav.grid-container{
     left: -10000px;
     padding: 30px 0 30px 1vw;
     max-width: 700px;
-    min-width: 428px;
+    /* min-width: 428px; */
 }
 .nav-menu.active{
     left: 0;
@@ -147,7 +148,7 @@ a:hover{
 .logo {
     order: 0;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 1;
 }
 .link {
     padding: 8px 10px;
@@ -155,7 +156,7 @@ a:hover{
     border-radius: 24px;
 }
 .nav-btns {
-    grid-column-start: 6;
+    grid-column-start: 3;
     grid-column-end: 11;
     order: 1;
 }
@@ -180,8 +181,11 @@ a:hover{
 header {
     background: #F8F7FD;
     color: black;
-    min-width: 428px;
+    min-width: 370px;
     padding-bottom: 120px;
+}
+.cta{
+    width: fit-content;
 }
 .cta a {
     margin: 32px 0px;
@@ -199,7 +203,7 @@ header {
     background: -webkit-gradient(linear, left top, left bottom, from(#6A4EE3), to(#1C0095));
     background: linear-gradient(180deg, #6A4EE3 0%, #1C0095 100%);
     border-radius: 100%;
-    width: 340px;
+    width: 300px;
     height: 330px;
     margin: 50px auto;
     position: relative;
@@ -209,10 +213,11 @@ header {
     position: absolute;
 }
 .black-star {
-    top: 13%;
+    top: 12%;
+    left: -10px;
 }
 .yellow-star {
-    right: -5.4%;
+    right: -5.5%;
     bottom: 15%;
 }
 .card {
@@ -364,7 +369,7 @@ header .swiper-pagination-bullet{
 /* ======== Explore Section ======== */
 .explore-communities.grid-container {
     margin: 120px 20px;
-    min-width: 370px;
+    min-width: 300px;
     max-width: 1300px;
     place-content: center;
 }
@@ -372,6 +377,12 @@ header .swiper-pagination-bullet{
     margin: 0 20px;
 }
 .explore-communities .section-link {
+    margin: 0;
+}
+.explore-communities .swiper-slide{
+    margin: 0 10px;
+}
+.swiper-slide:first-child{
     margin: 0;
 }
 .explore-communities .card, .explore-communities .events-card{
@@ -400,7 +411,7 @@ header .swiper-pagination-bullet{
     position: relative;
     cursor: grab;
     margin: 24px 0 10px;
-    min-width: 370px;
+    min-width: 300px;
     overflow: scroll;
 }
 .outer-slider::-webkit-scrollbar {
@@ -435,17 +446,18 @@ header .swiper-pagination-bullet{
     color: white;
 }
 .live-events-bg .wrapper {
-    width: 330px;
-    height: 450px;
+    width: 280px;
+    height: 350px;
 }
 .live-events-bg .black-star, .join-bg .black-star{
     filter: brightness(0) invert(1);
 }
+
 /*  Events Card */
 .events-card {
     background-color: white;
     width: fit-content;
-    max-width: 300px;
+    max-width: 260px;
     border-radius: 8px;
     margin: 0 auto;
     border: 1px solid #A8A8A8;
@@ -453,13 +465,13 @@ header .swiper-pagination-bullet{
 }
 .event-card-img {
     width: inherit;
-    max-width: 298px;
-    height: 190px;
+    max-width: 258px;
+    height: 120px;
     border-radius: 8px 8px 0 0;
 }
 .event-heading {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.02em;
     margin: 16px 0px;
@@ -527,13 +539,13 @@ header .swiper-pagination-bullet{
     background: #F8F7FD;
 }
 .challenges-bg .black-star {
-    right: 0;
+    right: 0px;
 }
 .challenges-bg .yellow-star {
     left: 0;
 }
 .challenges-bg .wrapper {
-    width: 350px;
+    width: 300px;
     height: 350px;
 }
 .challenge-cards {
@@ -543,13 +555,13 @@ header .swiper-pagination-bullet{
 }
 .challenge-card {
     width: fit-content;
-    max-width: 300px;
+    max-width: 250px;
     background-color: white;
     border-radius: 16px;
     filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.08));
 }
 .challenge-card-img {
-    max-width: 300px;
+    max-width: 250px;
     border-radius: 16px 16px 0 0;
 }
 .challenge-card-heading {
@@ -559,7 +571,7 @@ header .swiper-pagination-bullet{
     margin: 16px 0;
 }
 .challenge-card-text {
-    padding: 16px;
+    padding: 10px 0 10px 13px;
     background-color: white;
     width: fit-content;
     border-radius: 0 0 16px 16px;
@@ -581,7 +593,7 @@ header .swiper-pagination-bullet{
     margin: 0px 8px;
 }
 .challenge-card-creator {
-    margin-left: 20px;
+    margin-left: 0px;
 }
 #challenge1 {
     position: absolute;
@@ -612,11 +624,10 @@ header .swiper-pagination-bullet{
     border: 1px solid #FFFFFF;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.08);
     border-radius: 16px;
-    height:400px;
+    height:350px;
 }
 .creator-card img {
     width: inherit;
-    /* max-width: 302px; */
     height: 210px;
     background: #FFFFFF;
     border-radius: 16px 16px 0 0;
@@ -708,8 +719,8 @@ header .swiper-pagination-bullet{
 .join-bg {
     background-color: #000000;
     color: white;
-    min-height: 100vh;
-    max-height: 965px;
+    min-height: 900px;
+    max-height: 970px;
 }
 .join-bg .main-headings {
     width: 50%;
@@ -719,27 +730,26 @@ header .swiper-pagination-bullet{
     gap: 10px;
 }
 .join-bg .wrapper {
-    width: 320px;
+    width: 280px;
     height: 450px;
 }
 .join-bg .card {
     position: absolute;
-    left: -40px;
-    top: 30px;
+    left: -50px;
+    top: 0;
     background-color: transparent;
     border: 0;
 }
 #mobile {
-    width: 400px;
-    height: 570px;
+    width: 380px;
+    height: 520px;
 }
-
 
 /* ======= Footer ======= */
 footer {
     max-width: 1300px;
     margin: 0 auto;
-    min-width: 428px;
+    min-width: 37px;
 }
 .privacy-note {
     padding: 20px 24px 32px;
@@ -853,7 +863,17 @@ footer a:hover{
 }
 
 /* ====== Media Queries ======= */
-@media (min-width: 410px) {
+@media (max-width: 400px) {
+    /* .join-bg .card{
+        top: 0;
+        left: -50px;
+        right: 50px;
+    }
+     #mobile{
+        /* height: 550px;
+    }  */
+}
+@media (min-width: 420px) {
     .logo{
         grid-column-end: 1;
     }
@@ -940,7 +960,7 @@ footer a:hover{
     }
     
     .join-bg{
-        max-height: 1000px;
+        max-height: 950px;
     }
 
     /* ========= Footer ========= */
@@ -1103,13 +1123,15 @@ footer a:hover{
     .events-card {
         background-color: white;
         width: 100%;
-        max-width: fit-content;
+        max-width: 380px;
         border-radius: 8px;
         margin: 0 auto 35px;
     }
     .event-card-img {
-        width: inherit;
-        max-width: 500px;
+        width: 100%;
+        max-width: 400px;
+        height: 175px;
+        object-fit:fill;
     }
     .event-card-text {
         padding: 16px;
@@ -1168,7 +1190,8 @@ footer a:hover{
     /* ========= Join ======== */
     .join-bg {
         min-height: 700px;
-        max-height: 800px;
+        max-height: 900px;
+        height: 700px;
     }
     .join-bg .section-text {
         margin: 100px 0;
@@ -1189,7 +1212,7 @@ footer a:hover{
     }
     #mobile {
         width: 470px;
-        height: 680px;
+        height: 630px;
     }
 
     /* ========= Footer ======== */
@@ -1238,6 +1261,9 @@ footer a:hover{
     /* ======== Join ======== */
     .join-bg .cta {
         flex-direction: row;
+    }
+    .join-bg{
+        height: 700px;
     }
     #mobile {
         height: 690px;
@@ -1321,7 +1347,7 @@ footer a:hover{
         max-width: 390px;
     }
     #challenge2 {
-        left: 9vw;
+        left: 5vw;
     }
 
     /* ========== Explore ======== */
@@ -1352,13 +1378,19 @@ footer a:hover{
     /* ==== JOIN ==== */
     .join-bg {
         min-height: 700px;
-        max-height: 785px;
+        max-height: 900px;
+        height: 810px;
     }
     .join-bg .section-text {
         margin: 100px 20px;
     }
     .join-bg .card {
         top: -50px;
+    }
+}
+@media (min-width: 1300px) {
+    #challenge2 {
+        left: 90px;
     }
 }
 

@@ -8,7 +8,7 @@ export default function CreatorCard({img}){
                     Drishti Verma
                 </p>
                 <p className="creator-desc">
-                    This is a creator line. This is a creator line. This is a creator line. This is a creator line.
+                    This is a creator line. This is a creator line. This is a creator line. This is a creator line. 
                 </p>
             </div>
         </div>
