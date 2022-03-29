@@ -25,7 +25,7 @@ export default function Events(){
 
                     {/* Challenges Card */}
                     <div className="wrapper col-5">
-                        <img src="images/black-star.svg" alt="" className="star black-star" />
+                        <img src="images/black-star.svg" alt="" className="star" id="ch-black-star"/>
                         <img src="images/yellow-star.svg" alt="" className = "star yellow-star" />
                         <ChallengeCard img="images/challenge1.svg" id="challenge1"/>
                         <ChallengeCard img="images/challenge2.svg" id="challenge2"/>
