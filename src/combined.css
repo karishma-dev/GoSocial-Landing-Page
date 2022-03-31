@@ -80,14 +80,14 @@ a {
     color: white;
     width: fit-content;
     display: block;
-    margin: 0;
+    margin: 20px 0;
 }
 .section-link:hover{
     background: #5848a1;
     color: white;
 }
 .live-events-bg, .challenges-bg, .creators-bg, .join-bg, .monetize-bg, .explore-communities {
-    min-width: 373px;
+    min-width: 300px;
 }
 .swiper-pagination-bullet{
     background-color: white !important;
@@ -263,7 +263,7 @@ header .card{
     line-height: 150%;
     letter-spacing: -0.02em;
 }
-.title-joined {
+/* .title-joined {
     height: 24px;
     border-radius: 8px;
     border: 1px solid #343A3F;
@@ -271,7 +271,7 @@ header .card{
     font-weight: bold;
     font-size: 12px;
     margin-top: 4px;
-}
+} */
 .title-creator {
     margin: 16px 0px 0;
 }
@@ -377,24 +377,11 @@ header .swiper-pagination-bullet{
 .explore-communities .section-link {
     margin: 0;
 }
-.explore-communities .swiper-slide{
-    margin: 0 10px;
-}
-.swiper-slide:first-child{
-    margin: 0;
-}
 .explore-communities .card, .explore-communities .events-card{
     margin: 0;
 }
 .creators-bg .section-link{
     margin: 0;
-}
-.explore-head {
-    margin: 24px auto;
-    width: 100%;
-    max-width: 200px;
-    display: flex;
-    justify-content: space-between;
 }
 .explore-head h2{
     font-size: 1rem;
@@ -415,12 +402,18 @@ header .swiper-pagination-bullet{
 .outer-slider::-webkit-scrollbar {
     display: none;
 }
+.outer-slider { 
+    overflow: -moz-scrollbars-none; 
+}
+.outer-slider { 
+    -ms-overflow-style: none; 
+}
 .explore-communities .card, .explore-communities  .events-card{
     margin: 0;
 }
 .explore-head{
+    margin: 24px 0;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     max-width: 1260px;
 }
@@ -539,7 +532,6 @@ header .swiper-pagination-bullet{
 #ch-black-star {
     left: 100%;
     top: 70px;
-    /* right: 0; */
 }
 .challenges-bg .yellow-star {
     bottom: 20px;
@@ -549,11 +541,6 @@ header .swiper-pagination-bullet{
     width: 250px;
     height: 300px;
     position: relative;
-}
-.challenge-cards {
-    margin: 0 auto;
-    position: relative;
-    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.19)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.11326)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0767396));
 }
 .challenge-card {
     width: fit-content;
@@ -573,7 +560,7 @@ header .swiper-pagination-bullet{
     margin: 16px 0;
 }
 .challenge-card-text {
-    padding: 10px 0 10px 13px;
+    padding: 10px 0 10px 10px;
     background-color: white;
     width: fit-content;
     border-radius: 0 0 16px 16px;
@@ -599,12 +586,12 @@ header .swiper-pagination-bullet{
 }
 #challenge1 {
     position: absolute;
-    left: -50px;
+    left: -20px;
 }
 #challenge2 {
     position: absolute;
-    top: 150px;
-    left: 50px;
+    top: 120px;
+    left: 20px;
 }
 
 /* ========= Creators ======== */
@@ -751,7 +738,7 @@ header .swiper-pagination-bullet{
 footer {
     max-width: 1300px;
     margin: 0 auto;
-    min-width: 37px;
+    min-width: 373px;
 }
 .privacy-note {
     padding: 20px 24px 32px;
@@ -793,7 +780,6 @@ footer {
     font-size: 26px;
     color: #FFDE31;
 }
-
 #fcreator-desc {
     font-weight: 500;
     font-size: 16px;
@@ -1282,10 +1268,11 @@ footer a:hover{
     .explore-communities .swiper-slide{
         margin: 0 70px;
     }
-    .explore-communities .swiper-slide:first-child{
-        margin: 0;
+    .explore-communities:last-child .swiper-slide{
+        margin: 0 50px;
     }
-    .explore-challenges .swiper-slide{
+    .explore-challenges .swiper-slide,
+    .explore-communities .swiper-slide:first-child{
         margin: 0;
     }
 }
@@ -1371,6 +1358,9 @@ footer a:hover{
     #challenge2 {
         left: 5vw;
     }
+    #ch-black-star{
+        left: 400px;
+    }
 
     /* ========== Explore ======== */
     .explore-challenges .swiper-wrapper {
@@ -1382,6 +1372,9 @@ footer a:hover{
         max-width: 1280px;
     }
     .explore-communities .swiper-slide{
+        margin: 0;
+    }
+    .explore-communities:last-child .swiper-slide{
         margin: 0;
     }
 

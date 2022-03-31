@@ -92,8 +92,8 @@ export default function Explore({heading, linkText}){
             <Swiper
                 modules={[Navigation]}
                 direction={"horizontal"}
-                spaceBetween={300}
-                slidesPerView={2}
+                spaceBetween={0}
+                slidesPerView={1}
                 breakpoints={{
                     440: {
                         spaceBetween: 210

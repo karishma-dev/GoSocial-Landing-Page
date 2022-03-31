@@ -1,7 +1,6 @@
 // import Swiper core and required modules and styles
 import { Swiper, SwiperSlide} from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
-import 'swiper/css';
 import 'swiper/css/pagination';
 
 // Import HeaderCard and WorkshopCard Component

@@ -1,7 +1,14 @@
 {
   "name": "gosocial",
   "version": "0.1.0",
+  "author": {
+    "name": "Karishma Garg",
+    "email": "jainkarishma76@gmail.com",
+    "url": "http://Krrish105.github.io/karishmagarg/"
+  },
   "homepage": "http://Krrish105.github.io/GoSocial-Landing-Page",
+  "description": "GoSocial Landing Page Clone built by Karishma Garg.",
+  "repository": "https://github.com/Krrish105/GoSocial-Landing-Page",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
